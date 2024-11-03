@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "TT-Lakes";
+  src: url(fonts/TTLakes-Regular.ttf);
+}
+
+.pageBrends {
+  min-width: 320px;
+  min-height: 234px;
+  background-color: #f8f8f8;
+}
+
+.titlePage {
+  height: 80px;
+  background-color: white;
+}
+
+.titlePage_text {
+  font-family: "TT-Lakes";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: #7e7e82;
+  padding: 16px;
+}
+
+.listBrends {
+  margin-top: 16px;
+  list-style: none;
+  margin-left: 16px;
+  flex-wrap: nowrap;
+}
+
+.listBrendsOn768px {
+  display: none;
+}
+
+.brend {
+  width: 240px !important;
+  height: 72px !important;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  background-color: #ffffff;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.brend_img {
+  margin-left: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.brend_next {
+  margin: 16px;
+}
+
+.swiper {
+  height: 120px;
+}
+
+.swiper-pagination {
+  height: 12px;
+  width: 204px;
+}
+
+.swiper-pagination-bullet {
+  height: 12px !important;
+  width: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+  --swiper-theme-color: #b5b6bc;
+}
+
+:root {
+  --swiper-theme-color: #dddddd;
+}
+.readMore,
+.closeMore {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .readMore,
+  .closeMore {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .titlePage {
+    height: 56px;
+  }
+
+  .swiper {
+    display: none !important;
+  }
+
+  .listBrendsOn768px {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 16px;
+    margin-left: 24px;
+    margin-top: 24px;
+  }
+
+  .brendOn768 {
+    width: 224px;
+    height: 72px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .readMore,
+  .closeMore {
+    all: unset;
+    display: block;
+    margin: 24px;
+    font-family: "TT-Lakes";
+    font-weight: 500;
+    font-size: 16px;
+    width: 134px;
+    height: 24px;
+  }
+
+  .brend_hide {
+    display: none;
+  }
+
+  .closeMore {
+    display: none;
+  }
+
+  .readMore {
+    display: block;
+  }
+}
+
+@media (min-width: 1120px) {
+  .brend_hide {
+    display: flex;
+  }
+
+  .brend_hideFullscrine {
+    display: none;
+  }
+}
